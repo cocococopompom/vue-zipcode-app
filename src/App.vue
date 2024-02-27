@@ -29,7 +29,7 @@ const results = reactive({
 
 const getAddress = (zipcode) => {
   loading.value = true
-  axios.get(`http://zipcloud.ibsnet.co.jp/api/search?zipcode=${zipcode}`)
+  axios.get(`https://zipcloud.ibsnet.co.jp/api/search?zipcode=${zipcode}`)
     .then(res => {
       results.address1 = res.data.results[0].address1,
       results.address2 = res.data.results[0].address2,
