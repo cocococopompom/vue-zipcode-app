@@ -1,0 +1,98 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* App.vue */
+.wrapper {
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ background-color: rgb(235, 234, 217);
+}
+
+.container {
+  width: 50vw;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 13px 5px rgba(0,0,0,0.25);
+}
+@media only screen and (max-width: 700px) {
+  .container{
+      width: 80vw;
+  }
+}
+
+
+/* Title.vue */
+h1 {
+  font-weight: 500;
+  margin: 0px 0 50px;
+  color: #333;
+}
+
+/* Form.vue */
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #333;
+  width: 40%;
+  padding-bottom: 4px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+button {
+  width: 40%;
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(71, 106, 188);
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.8
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Results.vue */
+.results_container label {
+  width: 4px;
+}
+
+/* Loading.vue */
+.loading {
+  border: 4px solid #5651f1;
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
