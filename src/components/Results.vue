@@ -1,12 +1,14 @@
 <template>
-  <div class="results_container">
-    <label>都道府県：</label>
-      <input type="text" v-model="results.address1"><br>
-    <label>市区町村：</label>
-      <input type="text" v-model="results.address2"><br>
-    <label>町　　域：</label>
-      <input type="text" v-model="results.address3">
-  </div>
+  <table class="results_container">
+    <tr class="address1_container">
+      <th>都道府県：</th>
+      <td>{{results.address1}}</td>
+    </tr>
+    <tr class="address23_container">
+      <th>住　　所：</th>
+      <td>{{results.address2}}{{results.address3}}</td>
+    </tr>
+  </table>
 </template>
 
 <script setup>
