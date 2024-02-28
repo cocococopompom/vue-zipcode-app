@@ -78,8 +78,22 @@ button:hover {
 }
 
 /* Results.vue */
-.results_container label {
-  width: 4px;
+.results_container {
+  margin: auto;
+  width: 70%;
+}
+.address1_container, .address23_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+th {
+  font-weight: normal;
+}
+td {
+  width: 50%;
+  border-bottom: #333 1px solid;
+  padding-bottom: 3px;
 }
 
 /* Loading.vue */
